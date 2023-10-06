@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+      <div class="album-art">
+        <img class="Artist" src="Artist.png" alt="Album Cover">
+        <img class="vinyl" src="Vinyl.png" alt="vinyl cover">
+      </div>
+      <div class="album-artist-info">
+        <h3>All Too Well (Taylor's Version)</h3>
+        <h4>Taylor Swift</h4>
+      </div>
+      <div class="seek-bar-container">
+        <input type="range" id="seek-bar" value="0">
+        <div class="time">
+          <!-- this will show the timer -->
+        </div>
+      </div>
+      <div class="playback-buttons">
+        <button id="previous-button">
+          <img src="Prev Track.png" alt="Previous">
+        </button>
+        <button id="play-pause-button">
+          <img src="Play Button.png" alt="Play">
+        </button>
+        <button id="next-button">
+          <img src="Next Track.png" alt="Next">
+        </button>
+      </div>
+
+      <!-- Lyrics Panel -->
+      <div id="lyrics-container">
+        <!-- Lyrics will be displayed here -->
+      </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js" type="module"></script>
+  <script src="spotify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
